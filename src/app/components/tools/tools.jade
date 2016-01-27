@@ -1,0 +1,8 @@
+header
+  h1 Excel Tools
+
+main
+  label Drag and drop files here
+  .drop-box(ng-model="controller.files" ngf-drop="controller.uploadFiles($files)" ngf-drag-over-class="'dragover'" ngf-multiple="true")
+    | Drop Excel files here
+  label(ng-show="controller.loading") Files are being loaded
